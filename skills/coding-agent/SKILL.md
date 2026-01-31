@@ -191,10 +191,10 @@ bash pty:true command:"pi --provider openai --model gpt-4o-mini -p 'Your task'"
 
 ```bash
 # Ask Copilot to code or refactor in a project
-bash workdir:~/project background:true command:"copilot --allow-all-tools -p \"Add unit tests for src/lib/foo.ts\""
+bash pty:true workdir:~/project background:true command:"copilot --allow-all-tools -p \"Add unit tests for src/lib/foo.ts\""
 
 # Summarize or explain code
-bash workdir:~/project background:true command:"copilot --allow-all-tools -p \"Summarize src/ and list risky files\""
+bash pty:true workdir:~/project background:true command:"copilot --allow-all-tools -p \"Summarize src/ and list risky files\""
 ```
 
 Tips:
