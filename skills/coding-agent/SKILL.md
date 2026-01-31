@@ -199,7 +199,7 @@ bash pty:true workdir:~/project background:true command:"copilot --allow-all-too
 
 Tips:
 - Keep prompts specific about files and expected outputs (tests, diffs, commands).
-- Use background mode unless you need a TTY; monitor with `process action:log`.
+- Use background mode (still with `pty:true` for coding agents) unless you truly need a foreground TTY; monitor with `process action:log`.
 - If Copilot asks a question, reply with `process action:write` to keep it moving.
 
 ---
